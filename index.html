@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping List</title>
+    </head>
+
+
+    <body>
+        <!-- Input Section -->
+        <div id="shoppingListInputContainer">
+            <h1>-Shopping List App-</h1>
+            <h3>Add, Update or Remove any item from your Shopping List.</h3>
+            <hr>
+
+
+            <!-- Add Item Section -->
+            <form id="addItemForm">
+                <h3>Add an Item:</h3>
+                
+                <!-- Add Name Input -->
+                <label for="addItemNameInput">Product Name:</label>
+                <input type="text"  id="addItemNameInput" required max="20">
+
+                <!-- Add Qty Input -->
+                <label for="addItemQtyInput">Quantity Needed:</label>
+                <input type="number" id="addItemQtyInput" required min="1">
+
+                <!-- Add Button -->
+                <button id="addItemButton">Add Item</button>
+            </form>
+            <hr>
+
+
+            <!-- Remove Item Section -->
+            <form id="removeItemForm">
+                <h3>Remove an Item:</h3>
+
+                <!-- Remove Item Input -->
+                <label for="removeItemNameInput">Product Name:</label>
+                <input type="text" id="removeItemNameInput" required max="20">
+                
+                <!-- Remove Button -->
+                <button id="removeItemButton">Remove Item</button>
+            </form>
+            <hr>
+
+
+            <!-- Update Item Section -->
+            <form id="updateItemForm">
+                <h3>Update Quantity of Item:</h3>
+                
+                <!-- Add Name Input -->
+                <label for="updateItemNameInput">Product Name:</label>
+                <input type="text" id="updateItemNameInput" required max="20">
+                
+                <!-- Add Qty Input -->
+                <label for="updateItemQtyInput">New Quantity:</label>
+                <input type="number" id="updateItemQtyInput" required min="1">
+                
+                <!-- Add Button -->
+                <button id="updateItemButton" type="submit">Update Item</button>
+            </form>
+            <hr>
+        </div>
+
+
+        <!-- Shopping List - Items inserted from Javascript -->
+        <ul id="shoppingListContainer"></ul>
+
+
+        <script src="./script.js"></script>
+    </body>
+</html>
